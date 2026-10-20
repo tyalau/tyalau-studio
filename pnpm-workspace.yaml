@@ -1,0 +1,5 @@
+allowBuilds:
+  unrs-resolver: true
+minimumReleaseAgeExclude:
+  - "@tyalau/prettier-config@0.1.0-beta.1"
+  - "@eslint-react/ast@5.28.1"
