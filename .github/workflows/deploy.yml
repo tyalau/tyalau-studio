@@ -28,7 +28,6 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
 
-      # `pnpm deploy` is a pnpm built-in, so call the script via `run`
       - name: Deploy to Sanity
         run: pnpm run deploy
         env:
