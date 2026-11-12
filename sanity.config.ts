@@ -1,0 +1,21 @@
+import { visionTool } from '@sanity/vision'
+import { defineConfig } from 'sanity'
+import { structureTool } from 'sanity/structure'
+import { schemaTypes } from './schemaTypes'
+
+export default defineConfig({
+  name: 'default',
+  title: 'tyalau',
+
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID!,
+  dataset: process.env.SANITY_STUDIO_DATASET!,
+
+  plugins: [structureTool(), visionTool()],
+
+  schema: {
+    types: schemaTypes,
+  },
+  deployment: {
+    appId: process.env.SANITY_STUDIO_APP_ID,
+  },
+})

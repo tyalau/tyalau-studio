@@ -1,0 +1,51 @@
+{
+  "name": "tyalau",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "main": "package.json",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "sanity build",
+    "deploy": "sanity deploy",
+    "deploy-graphql": "sanity graphql deploy",
+    "dev": "sanity dev",
+    "start": "sanity start",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "format": "prettier --write \"**/*.{js,jsx,mjs,ts,tsx,css,scss,md,json,yaml,yml}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,mjs,ts,tsx,css,scss,md,json,yaml,yml}\"",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@sanity/icons": "5.2.2",
+    "@sanity/vision": "^6.23.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "sanity": "^6.23.0",
+    "styled-components": "^6.1.18"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.3",
+    "@tyalau/eslint-config": "0.1.0-beta.0",
+    "@tyalau/prettier-config": "0.1.0-beta.1",
+    "@tyalau/typescript-config": "0.1.0-beta.0",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.2.14",
+    "eslint": "^9.39.5",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.6.0",
+    "prettier": "^3.9.8",
+    "typescript": "^6.0.3"
+  },
+  "prettier": "@tyalau/prettier-config",
+  "packageManager": "pnpm@12.14.0",
+  "engines": {
+    "node": ">=26.9.0",
+    "pnpm": ">=12.14.0"
+  }
+}
