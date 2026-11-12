@@ -34,7 +34,7 @@
     "@tyalau/eslint-config": "0.1.0-beta.0",
     "@tyalau/prettier-config": "0.1.0-beta.1",
     "@tyalau/typescript-config": "0.1.0-beta.0",
-    "@types/node": "^26.6.5",
+    "@types/node": "^26.6.6",
     "@types/react": "^19.2.14",
     "eslint": "^9.39.5",
     "husky": "^9.1.7",
